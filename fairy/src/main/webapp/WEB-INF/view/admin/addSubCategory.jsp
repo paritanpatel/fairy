@@ -96,7 +96,7 @@
                                     <label for="food">Category Name</label>
                                     <br/>
                                     
-                                    <f:select path="categoryVO.id" id="food" name="food[]" class="multiselect multiselect-custom" multiple="multiple" data-parsley-required data-parsley-trigger-after-failure="change" data-parsley-errors-container="#error-multiselect">
+                                    <f:select path="categoryVO.id" class="form-control">
                                     	<c:forEach items="${categoryList}" var="i">
                                         	<option value="${i.id}">${i.categoryName}</option>
                                         </c:forEach>

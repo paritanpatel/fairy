@@ -22,8 +22,15 @@ public class SubCategoryService {
 
 	@Transactional
 	public List search() {
-		List subCategoryList = this.subCategoryDAO.search();
-		return subCategoryList;
+		List subcategoryList = this.subCategoryDAO.search();
+		return subcategoryList;
+	}
+
+	@Transactional
+	public List edit(SubCategoryVO subCategoryVO) {
+
+		List subcategoryList = this.subCategoryDAO.edit(subCategoryVO);
+		return subcategoryList;
 	}
 
 }

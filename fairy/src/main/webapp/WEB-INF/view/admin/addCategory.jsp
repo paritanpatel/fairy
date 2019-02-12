@@ -86,7 +86,7 @@
                             <h2>Category Details</h2>
                         </div>
                         
- <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+ 			<%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
  
                         <div class="body">
                             <f:form id="basic-form" method="post"  action="insertCategory" modelAttribute="CategoryVO">

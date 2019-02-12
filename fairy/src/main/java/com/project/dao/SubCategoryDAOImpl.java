@@ -23,17 +23,31 @@ public class SubCategoryDAOImpl implements SubCategoryDAO{
 	}
 	
 	public List search(){
-		List categoryList = new ArrayList();		
+		List subcategoryList = new ArrayList();		
 		try{
 			Session session = this.sessionFactory.getCurrentSession();
 			Query q= session.createQuery("from SubCategoryVO where status = true " );
-			categoryList = q.list();
+			subcategoryList = q.list();
 		}
 		catch(Exception e){
 			e.printStackTrace();
 		}
-		return categoryList;
+		return subcategoryList;
 	}
 
+	public List edit(SubCategoryVO subCategoryVO){
+		List subcategoryList = new ArrayList();
+		try{
+			Session session = this.sessionFactory.getCurrentSession();
+			Query q= session.createQuery("from SubCategoryVO where id='"+subCategoryVO.getId()+"'");
+			subcategoryList = q.list();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		return subcategoryList;
+	}
+		
+	
 
 }

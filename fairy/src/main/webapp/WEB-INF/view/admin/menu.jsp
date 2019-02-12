@@ -80,7 +80,9 @@
                             
                             <li><a href="javascript:void(0);" class="has-arrow"><i class="icon-layers"></i><span>Manage Background</span> </a>
                                 <ul>
-                                    <li><a href="depa-add.html"> Add Background</a></li>
+                                    <li><a href="loadBackground"> Add Background</a></li>
+                                    <li><a href="viewBackground"> View Background</a></li>
+                                    
                                 </ul>
                             </li>
                             

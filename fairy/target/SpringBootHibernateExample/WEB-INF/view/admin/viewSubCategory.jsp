@@ -75,6 +75,8 @@ Overlay For Sidebars -->
                         <div class="header">
                             <h2>View Sub-category	</h2>                            
                         </div>
+                        
+                        <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
                         <div class="body">
                             <table class="table table-bordered table-striped table-hover dataTable js-exportable">
                                 <thead>
@@ -86,25 +88,27 @@ Overlay For Sidebars -->
                                         <th>Action</th>
                                     </tr>
                                 </thead>
+                                 <c:forEach items="${subcategoryList}" var="i" varStatus="j">
                                 <tbody>
                                     <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>${j.count}</td>
+                                        <td>${i.categoryVO.categoryName}</td>
+                                        <td>${i.subCategoryName}</td>
+                                        <td>${i.subCategoryDescription}</td>
                                         <td class="actions">
                                             
                                             <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
                                             	data-toggle="tooltip" data-original-title="Edit">
-                                            	<a href=""><i class="icon-pencil" aria-hidden="true"></i></a>
+                                            	<a href="editSubCategory?SubCategoryId=${i.id}"><i class="icon-pencil" aria-hidden="true"></i></a>
                                             </button>
                                             <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
                                             	data-toggle="tooltip" data-original-title="Remove">
-                                            	<a href=""><i class="icon-trash" aria-hidden="true"></i></a>
+                                            	<a href="deleteSubCategory?SubCategoryId=${i.id}"><i class="icon-trash" aria-hidden="true"></i></a>
                                             </button>
                                         </td>
                                      </tr>
                                 </tbody>
+                                </c:forEach> 
                             </table>
                         </div>
                     </div>

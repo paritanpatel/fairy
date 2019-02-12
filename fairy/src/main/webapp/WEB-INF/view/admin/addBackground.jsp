@@ -84,41 +84,51 @@
                         <div class="header">
                             <h2>Backgroud Details</h2>
                         </div>
+                        
+                        <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
                         <div class="body">
-                            <form id="basic-form" method="post" novalidate>
+                            <f:form id="basic-form" method="post" action="insertBackground" modelAttribute="BackgroundVO" enctype="multipart/form-data">
                              
                              
-                            	 <div class="form-group">
-                                    <label>Category Name</label>
-                                    <select class="form-control" >
-                                    	<option></option>
-                                    	<option></option>
-                                    	<option></option>
-                                    </select>
+                            	<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
+                                <div class="form-group">
+                                    <label for="food">Category Name</label>
+                                    <br/>
+                                    
+                                    <f:select path="categoryVO.id" class="form-control">
+                                    	<c:forEach items="${categoryList}" var="i">
+                                        	<option value="${i.id}">${i.categoryName}</option>
+                                        </c:forEach>
+                                    </f:select>
+                                    
+                                    <p id="error-multiselect"></p>
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label>Sub Category Name</label>
-                                    <select class="form-control" >
-                                    	<option></option>
-                                    	<option></option>
-                                    	<option></option>
-                                    </select>
+                                    <label  for="food">Sub Category Name</label>
+                                    <br/>
+                                    <f:select path="subCategoryVO.id" class="form-control" >
+                                    	<c:forEach items="${subcategoryList}" var="i">
+                                        	<option value="${i.id}">${i.subCategoryName}</option>
+                                        </c:forEach>
+                                    </f:select>
                                 </div>
                              
                                 <div class="form-group">
                                     <label>Background Name</label>
-                                    <input type="text" class="form-control" required>
+                                    <f:input type="text" path="backgroundName" class="form-control" required="required"/>
                                 </div>
                                 
+                               		
                                 <div class="form-group">
-                                	<label>Upload</label>
-                                    <input type="file" class="form-control" required>
-                                </div>
+                                     <label>Attachment</label>
+                                     <input name="file" type="file" class="form-control" required="required"/>
+                                 </div>
                                 
                                 <br>
+                                <f:hidden path="id"/>
                                 <button type="submit" class="btn btn-primary">Validate</button>
-                            </form>
+                            </f:form>
                         </div>
                     </div>
                 </div>

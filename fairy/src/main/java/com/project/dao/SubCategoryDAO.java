@@ -10,4 +10,6 @@ public interface SubCategoryDAO {
 
 	public List search();
 
+	public List edit(SubCategoryVO subCategoryVO);
+
 }
