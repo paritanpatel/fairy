@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  src: local('EB Garamond Italic'), local('EBGaramond-Italic'), url(../fonts/a7ivpTe3zZzednsAv-J8JXHMjaWcPn0XVDzUMikH7i0.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 500;
+  src: local('EB Garamond Medium Italic'), local('EBGaramond-MediumItalic'), url(../fonts/FBuKd0n5KoiDwUwHEzWyyVIZEIpfJ_HS1x91Cv2NYuo.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 600;
+  src: local('EB Garamond SemiBold Italic'), local('EBGaramond-SemiBoldItalic'), url(../fonts/FBuKd0n5KoiDwUwHEzWyyS42Qd9_MUlrKgPg6A9SxEs.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 700;
+  src: local('EB Garamond Bold Italic'), local('EBGaramond-BoldItalic'), url(../fonts/FBuKd0n5KoiDwUwHEzWyydze_aLS5_CNZbXL4iKtV0w.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 800;
+  src: local('EB Garamond ExtraBold Italic'), local('EBGaramond-ExtraBoldItalic'), url(../fonts/FBuKd0n5KoiDwUwHEzWyyYHCr2uw-Oj0dTmoo6FQsyo.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: local('EB Garamond Regular'), local('EBGaramond-Regular'), url(../fonts/kYZt1bJ8UsGAPRGnkXPeFafTCPadK0KLfdEfFtGWCYw.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  src: local('EB Garamond Medium'), local('EBGaramond-Medium'), url(../fonts/op4fHM8PJYvTt3cOgGzs_3E52uPHBZ35-8GybJ7lO2Y.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 600;
+  src: local('EB Garamond SemiBold'), local('EBGaramond-SemiBold'), url(../fonts/op4fHM8PJYvTt3cOgGzs_xyVJL_BP-r1aUfHSUUH87w.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: local('EB Garamond Bold'), local('EBGaramond-Bold'), url(../fonts/op4fHM8PJYvTt3cOgGzs_xLE7eCesZRIBkkq27EgTqg.woff) format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 800;
+  src: local('EB Garamond ExtraBold'), local('EBGaramond-ExtraBold'), url(../fonts/op4fHM8PJYvTt3cOgGzs_0vl7KNGJmw8PrsRUPZT2YQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(../fonts/ltAXVgMneoy-oSOU9NjhfHYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(../fonts/XNVd6tsqi9wmKNvnh5HNELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(../fonts/NdyT62s2uoMQ_OHiZ3MeDevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(../fonts/AcvTq8Q0lyKKNxRlL28Rn7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(../fonts/81X-1TO5y4aMK2PPy9kFw7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(../fonts/pTzFBqwzDU5_uumHzlVDTevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/7YeX5qGGVrvjpqFsvxNSRALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/2V_mouV5odI0UgtVODTOwvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(../fonts/sccV8o9st-AMv7Su44YKKQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(../fonts/Ue1lpEind3fdmHHQkRYdowLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}

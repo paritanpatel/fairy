@@ -11,23 +11,23 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- VENDOR CSS -->
-<link rel="stylesheet" href="adminResources/css/bootstrap.min.css">
-<link rel="stylesheet" href="adminResources/css/font-awesome.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/bootstrap.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="adminResources/css/chartist.min.css">
-<link rel="stylesheet" href="adminResources/css/chartist-plugin-tooltip.css">
-<link rel="stylesheet" href="adminResources/css/toastr.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/chartist.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/toastr.min.css">
 
 <!-- MAIN CSS -->
-<link rel="stylesheet" href="adminResources/css/main.css">
-<link rel="stylesheet" href="adminResources/css/color_skins.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/main.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/color_skins.css">
 </head>
 <body class="theme-cyan">
 
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img src="adminResources/image/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
+        <div class="m-t-30"><img src="<%=request.getContextPath()%>/adminResources/image/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
         <p>Please wait...</p>        
     </div>
 </div>
@@ -332,9 +332,9 @@
                                     <div class="m-l-35 m-b-30">
                                         <small class="text-muted">SCHEDULED FOR 3:00 P.M. ON JUN 2018</small>
                                         <ul class="list-unstyled team-info">
-                                            <li><img src="adminResources/image/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Dr. Chris Fox" alt="Avatar"></li>
-                                            <li><img src="adminResources/image/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Dr. Joge Lucky" alt="Avatar"></li>
-                                            <li><img src="adminResources/image/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Isabella" alt="Avatar"></li>
+                                            <li><img src="<%=request.getContextPath()%>/adminResources/image/avatar1.jpg" data-toggle="tooltip" data-placement="top" title="Dr. Chris Fox" alt="Avatar"></li>
+                                            <li><img src="<%=request.getContextPath()%>/adminResources/image/avatar2.jpg" data-toggle="tooltip" data-placement="top" title="Dr. Joge Lucky" alt="Avatar"></li>
+                                            <li><img src="<%=request.getContextPath()%>/adminResources/image/avatar5.jpg" data-toggle="tooltip" data-placement="top" title="Isabella" alt="Avatar"></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -366,8 +366,8 @@
                                     <div class="m-l-35">
                                         <small class="text-muted">SCHEDULED FOR 4:30 P.M. ON JUN 2018</small>
                                         <ul class="list-unstyled team-info">
-                                            <li><img src="adminResources/image/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Dr. Chris Fox" alt="Avatar"></li>
-                                            <li><img src="adminResources/image/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="Dr. Joge Lucky" alt="Avatar"></li>
+                                            <li><img src="<%=request.getContextPath()%>/adminResources/image/avatar4.jpg" data-toggle="tooltip" data-placement="top" title="Dr. Chris Fox" alt="Avatar"></li>
+                                            <li><img src="<%=request.getContextPath()%>/adminResources/image/avatar6.jpg" data-toggle="tooltip" data-placement="top" title="Dr. Joge Lucky" alt="Avatar"></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -422,25 +422,25 @@
                                     <div class="cwidget-scroll">
                                         <ul class="chat-widget m-r-5 clearfix">
                                             <li class="left float-left">
-                                                <img src="adminResources/image/avatar2.jpg" class="rounded-circle" alt="">
+                                                <img src="<%=request.getContextPath()%>/adminResources/image/avatar2.jpg" class="rounded-circle" alt="">
                                                 <div class="chat-info">       
                                                     <span class="message">Hello, John<br>What is the update on Project X?</span>
                                                 </div>
                                             </li>
                                             <li class="right">
-                                                <img src="adminResources/image/avatar1.jpg" class="rounded-circle" alt="">
+                                                <img src="<%=request.getContextPath()%>/adminResources/image/avatar1.jpg" class="rounded-circle" alt="">
                                                 <div class="chat-info">
                                                     <span class="message">Hi, Chandler<br> It is almost completed. I will send you an email later today.</span>
                                                 </div>
                                             </li>
                                             <li class="left float-left">
-                                                <img src="adminResources/image/avatar2.jpg" class="rounded-circle" alt="">
+                                                <img src="<%=request.getContextPath()%>/adminResources/image/avatar2.jpg" class="rounded-circle" alt="">
                                                 <div class="chat-info">
                                                     <span class="message">That's great. Will catch you in evening.</span>
                                                 </div>
                                             </li>
                                             <li class="right">
-                                                <img src="adminResources/image/avatar1.jpg" class="rounded-circle" alt="">
+                                                <img src="<%=request.getContextPath()%>/adminResources/image/avatar1.jpg" class="rounded-circle" alt="">
                                                 <div class="chat-info">
                                                     <span class="message">Sure we'will have a blast today.</span>
                                                 </div>
@@ -492,8 +492,8 @@
                                 <div class="msg">
                                     <p>web by far While that's mock-ups and this is politics, are they really so different? I think the only card she has is the Lorem card.</p>
                                     <div class="timeline_img m-b-20">
-                                        <img class="w-25" src="adminResources/image/blog-page-4.jpg" alt="Awesome Image">
-                                        <img class="w-25" src="adminResources/image/blog-page-2.jpg" alt="Awesome Image">
+                                        <img class="w-25" src="<%=request.getContextPath()%>/adminResources/image/blog-page-4.jpg" alt="Awesome Image">
+                                        <img class="w-25" src="<%=request.getContextPath()%>/adminResources/image/blog-page-2.jpg" alt="Awesome Image">
                                     </div>
                                     <a href="javascript:void(0);" class="m-r-20"><i class="icon-heart"></i> Like</a>
                                     <a role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"><i class="icon-bubbles"></i> Comment</a>
@@ -570,7 +570,7 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td><img src="adminResources/image/avatar3.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>John</span></td>
+                                            <td><img src="<%=request.getContextPath()%>/adminResources/image/avatar3.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>John</span></td>
                                             <td><span class="text-info">70 Bowman St. South Windsor, CT 06074</span></td>
                                             <td>Sept 13, 2017</td>
                                             <td>Sept 16, 2017</td>
@@ -583,7 +583,7 @@
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td><img src="adminResources/image/avatar1.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>Jack Bird</span></td>
+                                            <td><img src="<%=request.getContextPath()%>/adminResources/image/avatar1.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>Jack Bird</span></td>
                                             <td><span class="text-info">123 6th St. Melbourne, FL 32904</span></td>
                                             <td>Sept 13, 2017</td>
                                             <td>Sept 22, 2017</td>
@@ -596,7 +596,7 @@
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td><img src="adminResources/image/avatar4.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>Dean Otto</span></td>
+                                            <td><img src="<%=request.getContextPath()%>/adminResources/image/avatar4.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>Dean Otto</span></td>
                                             <td><span class="text-info">123 6th St. Melbourne, FL 32904</span></td>
                                             <td>Sept 13, 2017</td>
                                             <td>Sept 23, 2017</td>
@@ -609,7 +609,7 @@
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td><img src="adminResources/image/avatar2.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>Jack Bird</span></td>
+                                            <td><img src="<%=request.getContextPath()%>/adminResources/image/avatar2.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>Jack Bird</span></td>
                                             <td><span class="text-info">4 Shirley Ave. West Chicago, IL 60185</span></td>
                                             <td>Sept 17, 2017</td>
                                             <td>Sept 16, 2017</td>
@@ -622,7 +622,7 @@
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td><img src="adminResources/image/avatar5.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>Hughe L.</span></td>
+                                            <td><img src="<%=request.getContextPath()%>/adminResources/image/avatar5.jpg" class="rounded-circle width30 m-r-15" alt="profile-image"><span>Hughe L.</span></td>
                                             <td><span class="text-info">4 Shirley Ave. West Chicago, IL 60185</span></td>
                                             <td>Sept 18, 2017</td>
                                             <td>Sept 18, 2017</td>
@@ -646,16 +646,16 @@
 </div>
 
 <!-- Javascript -->
-<script src="adminResources/js/libscripts.bundle.js"></script>
-<script src="adminResources/js/vendorscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/libscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/vendorscripts.bundle.js"></script>
 
-<script src="adminResources/js/chartist.bundle.js"></script>
-<script src="adminResources/js/knob.bundle.js"></script> <!-- Jquery Knob-->
-<script src="adminResources/js/flotscripts.bundle.js"></script> <!-- flot charts Plugin Js -->
-<script src="adminResources/js/toastr.js"></script>
-<script src="adminResources/js/jquery.flot.selection.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/chartist.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/knob.bundle.js"></script> <!-- Jquery Knob-->
+<script src="<%=request.getContextPath()%>/adminResources/js/flotscripts.bundle.js"></script> <!-- flot charts Plugin Js -->
+<script src="<%=request.getContextPath()%>/adminResources/js/toastr.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/jquery.flot.selection.js"></script>
 
-<script src="adminResources/js/mainscripts.bundle.js"></script>
-<script src="adminResources/js/index.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/mainscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/index.js"></script>
 </body>
 </html>

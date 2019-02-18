@@ -1,7 +1,7 @@
  <div id="left-sidebar" class="sidebar">
         <div class="sidebar-scroll">
             <div class="user-account">
-                <img src="adminResources/image/user.png" class="rounded-circle user-photo" alt="User Profile Picture">
+                <img src="<%=request.getContextPath()%>/adminResources/image/user.png" class="rounded-circle user-photo" alt="User Profile Picture">
                 <div class="dropdown">
                     <span>Welcome,</span>
                     <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Dr. Chandler Bing</strong></a>
@@ -91,7 +91,21 @@
                             <li>
                                 <a href="#Authentication" class="has-arrow"><i class="icon-lock"></i><span>Manage Character</span></a>
                                 <ul>
-                                    <li><a href="page-login.html">Add Character</a></li>
+                                    <li><a href="loadCharacter">Add Character</a></li>
+                                    <li><a href="viewCharacter">View Character</a></li>
+                               
+                                </ul>
+                            </li>
+                           
+                           
+                           <!-- ******************************* MANAGE TEMPLATE ******************************* -->
+                           
+                           <li>
+                                <a href="#Authentication" class="has-arrow"><i class="icon-lock"></i><span>Manage Template</span></a>
+                                <ul>
+                                    <li><a href="loadTemplate">Add Template</a></li>
+                                    <li><a href="viewTemplate">View Template</a></li>
+                               
                                 </ul>
                             </li>
                            
@@ -203,7 +217,7 @@
                         <li class="online">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="adminResources/image/avatar4.jpg" alt="">
+                                    <img class="media-object " src="<%=request.getContextPath()%>/adminResources/image/avatar4.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Dr. Chris Fox</span>
                                         <span class="message">Dentist</span>
@@ -215,7 +229,7 @@
                         <li class="online">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="adminResources/image/avatar5.jpg" alt="">
+                                    <img class="media-object " src="<%=request.getContextPath()%>/adminResources/image/avatar5.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Dr. Joge Lucky</span>
                                         <span class="message">Gynecologist</span>
@@ -227,7 +241,7 @@
                         <li class="offline">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="adminResources/image/avatar2.jpg" alt="">
+                                    <img class="media-object " src="<%=request.getContextPath()%>/adminResources/image/avatar2.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Dr. Isabella</span>
                                         <span class="message">CEO, WrapTheme</span>
@@ -239,7 +253,7 @@
                         <li class="offline">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="adminResources/image/avatar1.jpg" alt="">
+                                    <img class="media-object " src="<%=request.getContextPath()%>/adminResources/image/avatar1.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Dr. Folisise Chosielie</span>
                                         <span class="message">Physical Therapy</span>
@@ -251,7 +265,7 @@
                         <li class="online">
                             <a href="javascript:void(0);">
                                 <div class="media">
-                                    <img class="media-object " src="adminResources/image/avatar3.jpg" alt="">
+                                    <img class="media-object " src="<%=request.getContextPath()%>/adminResources/image/avatar3.jpg" alt="">
                                     <div class="media-body">
                                         <span class="name">Dr. Alexander</span>
                                         <span class="message">Audiology</span>

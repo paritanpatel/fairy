@@ -9,24 +9,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!-- VENDOR CSS -->
-<link rel="stylesheet" href="adminResources/css/bootstrap.min.css">
-<link rel="stylesheet" href="adminResources/css/font-awesome.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/bootstrap.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="adminResources/css/dataTables.bootstrap4.min.css">
-<link rel="stylesheet" href="adminResources/css/dataTables.fixedcolumns.bootstrap4.min.css">
-<link rel="stylesheet" href="adminResources/css/dataTables.fixedheader.bootstrap4.min.css">
-<link rel="stylesheet" href="adminResources/css/sweetalert.css"/>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/dataTables.fixedcolumns.bootstrap4.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/dataTables.fixedheader.bootstrap4.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/sweetalert.css"/>
 
 <!-- MAIN CSS -->
-<link rel="stylesheet" href="adminResources/css/main.css">
-<link rel="stylesheet" href="adminResources/css/color_skins.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/main.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/color_skins.css">
 <style>
     td.details-control {
-    background: url('adminResources/image/details_open.png') no-repeat center center;
+    background: url('<%=request.getContextPath()%>/adminResources/image/details_open.png') no-repeat center center;
     cursor: pointer;
 }
     tr.shown td.details-control {
-        background: url('adminResources/image/details_close.png') no-repeat center center;
+        background: url('<%=request.getContextPath()%>/adminResources/image/details_close.png') no-repeat center center;
     }
 </style>
 </head>
@@ -35,7 +35,7 @@
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img src="adminResources/image/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
+        <div class="m-t-30"><img src="<%=request.getContextPath()%>/adminResources/image/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
         <p>Please wait...</p>        
     </div>
 </div>
@@ -1666,21 +1666,21 @@
 </div>
 
 <!-- Javascript -->
-<script src="adminResources/js/libscripts.bundle.js"></script>    
-<script src="adminResources/js/vendorscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/libscripts.bundle.js"></script>    
+<script src="<%=request.getContextPath()%>/adminResources/js/vendorscripts.bundle.js"></script>
 
-<script src="adminResources/js/datatablescripts.bundle.js"></script>
-<script src="adminResources/js/dataTables.buttons.min.js"></script>
-<script src="adminResources/js/buttons.bootstrap4.min.js"></script>
-<script src="adminResources/js/buttons.colVis.min.js"></script>
-<script src="adminResources/js/buttons.html5.min.js"></script>
-<script src="adminResources/js/buttons.print.min.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/datatablescripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/dataTables.buttons.min.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/buttons.bootstrap4.min.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/buttons.colVis.min.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/buttons.html5.min.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/buttons.print.min.js"></script>
 
-<script src="adminResources/js/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js --> 
+<script src="<%=request.getContextPath()%>/adminResources/js/sweetalert.min.js"></script> <!-- SweetAlert Plugin Js --> 
 
 
-<script src="adminResources/js/mainscripts.bundle.js"></script>
-<script src="adminResources/js/jquery-datatable.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/mainscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/jquery-datatable.js"></script>
 </body>
 </html>
     

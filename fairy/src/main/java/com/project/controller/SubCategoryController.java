@@ -24,26 +24,26 @@ public class SubCategoryController {
 	@Autowired
 	SubCategoryService subCategoryService;
 	
-	@RequestMapping(value="loadSubCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/loadSubCategory",method=RequestMethod.GET)
 	public ModelAndView loadSubCategory(@ModelAttribute CategoryVO categoryVO){
 		List categoryList = this.categoryService.search();
-		return new ModelAndView("admin/addSubCategory","SubCategoryVO",new SubCategoryVO()).addObject("categoryList",categoryList);
+		return new ModelAndView("/admin/addSubCategory","SubCategoryVO",new SubCategoryVO()).addObject("categoryList",categoryList);
 	}
 	
-	@RequestMapping(value="insertSubCategory",method=RequestMethod.POST)
+	@RequestMapping(value="/admin/insertSubCategory",method=RequestMethod.POST)
 	public ModelAndView insertSubCategory(@ModelAttribute SubCategoryVO subCategoryVO){
 		subCategoryVO.setStatus(true);
 		this.subCategoryService.insert(subCategoryVO);
-		return new ModelAndView("redirect:/viewSubCategory");
+		return new ModelAndView("redirect:/admin/viewSubCategory");
 	}
 	
-	@RequestMapping(value="viewSubCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/viewSubCategory",method=RequestMethod.GET)
 	public ModelAndView viewSubCategory(@ModelAttribute SubCategoryVO subCategoryVO){
 		List subcategoryList = this.subCategoryService.search();
-		return new ModelAndView("admin/viewSubCategory","subcategoryList",subcategoryList);
+		return new ModelAndView("/admin/viewSubCategory","subcategoryList",subcategoryList);
 	}
 	
-	@RequestMapping(value="deleteSubCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/deleteSubCategory",method=RequestMethod.GET)
 	public ModelAndView deleteSubCategory(@ModelAttribute SubCategoryVO subCategoryVO,@RequestParam String SubCategoryId){
 		
 		subCategoryVO.setId((Integer.parseInt(SubCategoryId)));
@@ -54,11 +54,11 @@ public class SubCategoryController {
 		
 		this.subCategoryService.insert(subCategoryVO);
 		
-		return new ModelAndView("redirect:/viewSubCategory");
+		return new ModelAndView("redirect:/admin/viewSubCategory");
 		
 	} 
 	
-	@RequestMapping(value="editSubCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/editSubCategory",method=RequestMethod.GET)
 	public ModelAndView editSubCategory(@ModelAttribute CategoryVO categoryVO,@ModelAttribute SubCategoryVO subCategoryVO,@RequestParam String SubCategoryId)
 	{
 		subCategoryVO.setId((Integer.parseInt(SubCategoryId)));

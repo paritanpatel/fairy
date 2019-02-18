@@ -13,21 +13,21 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- VENDOR CSS -->
-<link rel="stylesheet" href="adminResources/css/bootstrap.min.css">
-<link rel="stylesheet" href="adminResources/css/font-awesome.min.css">
-<link rel="stylesheet" href="adminResources/css/bootstrap-multiselect.css">
-<link rel="stylesheet" href="adminResources/css/parsley.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/bootstrap.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/font-awesome.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/bootstrap-multiselect.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/parsley.css">
 
 <!-- MAIN CSS -->
-<link rel="stylesheet" href="adminResources/css/main.css">
-<link rel="stylesheet" href="adminResources/css/color_skins.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/main.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/color_skins.css">
 </head>
 <body class="theme-cyan">
 
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img src="adminResources/image/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
+        <div class="m-t-30"><img src="<%=request.getContextPath()%>/adminResources/image/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
         <p>Please wait...</p>        
     </div>
 </div>
@@ -84,41 +84,55 @@
                         <div class="header">
                             <h2>Character Details</h2>
                         </div>
+                        
+                        <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+                        
                         <div class="body">
-                            <form id="basic-form" method="post" novalidate>
+                            <f:form id="basic-form" method="post" action="insertCharacter" modelAttribute="CharacterVO" enctype="multipart/form-data">
+            
                            
-                           		<div class="form-group">
-                                    <label>Category Name</label>
-                                    <select class="form-control" >
-                                    	<option></option>
-                                    	<option></option>
-                                    	<option></option>
-                                    </select>
+                                <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
+                              
+                                 <div class="form-group">
+                                    <label for="food">Category Name</label>
+                                    <br/>
+                                    
+                                    <f:select path="categoryVO.id" class="form-control">
+                                    	<c:forEach items="${categoryList}" var="i">
+                                        	<option value="${i.id}">${i.categoryName}</option>
+                                        </c:forEach>
+                                    </f:select>
+                                <p id="error-multiselect"></p>
                                 </div>
-                                
-                                <div class="form-group">
-                                    <label>SubCategory Name</label>
-                                    <select class="form-control" >
-                                    	<option></option>
-                                    	<option></option>
-                                    	<option></option>
-                                    </select>
+                              
+                               
+                                 <div class="form-group">
+                                    <label for="food">SubCategory Name</label>
+                                    <br/>
+                                    
+                                    <f:select path="subCategoryVO.id" class="form-control">
+                                    	<c:forEach items="${subcategoryList}" var="i">
+                                        	<option value="${i.id}">${i.subCategoryName}</option>
+                                        </c:forEach>
+                                    </f:select>
+                                <p id="error-multiselect"></p>
                                 </div>
-                           
-                           
+                   
                                 <div class="form-group">
                                     <label>Character Name</label>
-                                    <input type="text" class="form-control" required>
+                                    <f:input type="text" path="characterName" class="form-control" required="required"/>
                                 </div>
+
                                 
                                 <div class="form-group">
-                                	<label>Upload</label>
-                                    <input type="file" class="form-control" required>
+                                    <label>Attachment</label>
+                                    <input name="file" type="file" class="form-control" required="required"/>
                                 </div>
                                 
                                <br>
-                                <button type="submit" class="btn btn-primary">Validate</button>
-                            </form>
+                                <f:hidden path="id"/>
+                                <button type="submit" class="btn btn-primary">save</button>
+                            </f:form>
                         </div>
                     </div>
                 </div>
@@ -130,13 +144,13 @@
 </div>
 
 <!-- Javascript -->
-<script src="adminResources/js/libscripts.bundle.js"></script>    
-<script src="adminResources/js/vendorscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/libscripts.bundle.js"></script>    
+<script src="<%=request.getContextPath()%>/adminResources/js/vendorscripts.bundle.js"></script>
 
-<script src="adminResources/js/bootstrap-multiselect.js"></script>
-<script src="adminResources/js/parsley.min.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/bootstrap-multiselect.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/parsley.min.js"></script>
     
-<script src="adminResources/js/mainscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/mainscripts.bundle.js"></script>
 <script>
     $(function() {
         // validation needs name of the element

@@ -13,12 +13,12 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- VENDOR CSS -->
-<link rel="stylesheet" href="adminResources/css/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="adminResources/css/font-awesome.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/font-awesome.min.css">
 
 <!-- MAIN CSS -->
-<link rel="stylesheet" href="adminResources/css/main.css">
-<link rel="stylesheet" href="adminResources/css/color_skins.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/main.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/color_skins.css">
 </head>
 
 <body class="theme-cyan">
@@ -28,21 +28,22 @@
 			<div class="vertical-align-middle auth-main">
 				<div class="auth-box">
                     <div class="top">
-                        <img src="adminResources/image/logo-white.svg" alt="Lucid">
+                        <img src="<%=request.getContextPath()%>/adminResources/image/logo-white.svg" alt="Lucid">
                     </div>
 					<div class="card">
                         <div class="header">
                             <p class="lead">Login to your account</p>
                         </div>
                         <div class="body">
-                            <form class="form-auth-small" action="index.html">
+                        <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+                            <form class="form-auth-small" action="j_spring_security_check" method="post">
                                 <div class="form-group">
-                                    <label for="signin-email" class="control-label sr-only">Email</label>
-                                    <input type="email" class="form-control" id="signin-email" value="user@domain.com" placeholder="Email">
+                                    <label for="signin-email" class="control-label sr-only">Username</label>
+                                    <input type="email" name="username" class="form-control" id="signin-email"  placeholder="username"/>
                                 </div>
                                 <div class="form-group">
                                     <label for="signin-password" class="control-label sr-only">Password</label>
-                                    <input type="password" class="form-control" id="signin-password" value="thisisthepassword" placeholder="Password">
+                                    <input type="password" name="password" class="form-control" id="signin-password"  placeholder="password"/>
                                 </div>
                                 <div class="form-group clearfix">
                                     <label class="fancy-checkbox element-left">

@@ -13,21 +13,21 @@
 
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- VENDOR CSS -->
-<link rel="stylesheet" href="adminResources/css/bootstrap.min.css">
-<link rel="stylesheet" href="adminResources/css/font-awesome.min.css">
-<link rel="stylesheet" href="adminResources/css/bootstrap-multiselect.css">
-<link rel="stylesheet" href="adminResources/css/parsley.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/bootstrap.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/font-awesome.min.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/bootstrap-multiselect.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/parsley.css">
 
 <!-- MAIN CSS -->
-<link rel="stylesheet" href="adminResources/css/main.css">
-<link rel="stylesheet" href="adminResources/css/color_skins.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/main.css">
+<link rel="stylesheet" href="<%=request.getContextPath()%>/adminResources/css/color_skins.css">
 </head>
 <body class="theme-cyan">
 
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img src="adminResources/image/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
+        <div class="m-t-30"><img src="<%=request.getContextPath()%>/adminResources/image/logo-icon.svg" width="48" height="48" alt="Lucid"></div>
         <p>Please wait...</p>        
     </div>
 </div>
@@ -140,13 +140,13 @@
 </div>
 
 <!-- Javascript -->
-<script src="adminResources/js/libscripts.bundle.js"></script>    
-<script src="adminResources/js/vendorscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/libscripts.bundle.js"></script>    
+<script src="<%=request.getContextPath()%>/adminResources/js/vendorscripts.bundle.js"></script>
 
-<script src="adminResources/js/bootstrap-multiselect.js"></script>
-<script src="adminResources/js/parsley.min.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/bootstrap-multiselect.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/parsley.min.js"></script>
     
-<script src="adminResources/js/mainscripts.bundle.js"></script>
+<script src="<%=request.getContextPath()%>/adminResources/js/mainscripts.bundle.js"></script>
 <script>
     $(function() {
         // validation needs name of the element

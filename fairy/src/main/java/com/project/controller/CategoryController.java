@@ -18,25 +18,25 @@ public class CategoryController {
 	@Autowired 
 	CategoryService categoryservice;
 
-	@RequestMapping(value="loadCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/loadCategory",method=RequestMethod.GET)
 	public ModelAndView loadCategory(){
 		return new ModelAndView("/admin/addCategory","CategoryVO",new CategoryVO());
 	}
 	
-	@RequestMapping(value="insertCategory",method=RequestMethod.POST)
+	@RequestMapping(value="/admin/insertCategory",method=RequestMethod.POST)
 	public ModelAndView insertCategory(@ModelAttribute CategoryVO categoryVO){
 		categoryVO.setStatus(true);
 		this.categoryservice.insert(categoryVO);
-		return new ModelAndView("redirect:/viewCategory");
+		return new ModelAndView("redirect:/admin/viewCategory");
 	}
 	
-	@RequestMapping(value="viewCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/viewCategory",method=RequestMethod.GET)
 	public ModelAndView viewCategory(@ModelAttribute CategoryVO categoryVO){
 		List categoryList=this.categoryservice.search();
-		return new ModelAndView("admin/viewCategory","categoryList",categoryList);
+		return new ModelAndView("/admin/viewCategory","categoryList",categoryList);
 	}
 	
-	@RequestMapping(value="deleteCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/deleteCategory",method=RequestMethod.GET)
 	public ModelAndView deleteCategory(@ModelAttribute CategoryVO categoryVO,@RequestParam String categoryId){
 
 		categoryVO.setId(Integer.parseInt(categoryId));
@@ -47,10 +47,10 @@ public class CategoryController {
 		
 		this.categoryservice.insert(categoryVO2);
 		
-		return new ModelAndView("redirect:/viewCategory");
+		return new ModelAndView("redirect:/admin/viewCategory");
 	}
 	
-	@RequestMapping(value="editCategory",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/editCategory",method=RequestMethod.GET)
 	public ModelAndView editCategory(@ModelAttribute CategoryVO categoryVO,@RequestParam String categoryId){
 		
 		categoryVO.setId(Integer.parseInt(categoryId));

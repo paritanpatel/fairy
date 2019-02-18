@@ -34,16 +34,16 @@ public class BackgroundController {
 	@Autowired
 	BackgroundService backgroundService;
 	
-	@RequestMapping(value="loadBackground",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/loadBackground",method=RequestMethod.GET)
 	public ModelAndView loadBackground(@ModelAttribute CategoryVO categoryVO){
 		List categoryList = this.categoryService.search();
 		List subcategoryList = this.subCategoryService.search();		
-		return new ModelAndView("admin/addBackground","BackgroundVO",new BackgroundVO()).
+		return new ModelAndView("/admin/addBackground","BackgroundVO",new BackgroundVO()).
 				addObject("categoryList",categoryList).
 				addObject("subcategoryList",subcategoryList);
 	}
 
-	@RequestMapping(value="insertBackground",method=RequestMethod.POST)
+	@RequestMapping(value="/admin/insertBackground",method=RequestMethod.POST)
 	public ModelAndView insertBackground(@ModelAttribute BackgroundVO backgroundVO,@RequestParam("file") MultipartFile file,HttpSession session){
 		
 		
@@ -68,17 +68,17 @@ public class BackgroundController {
 		backgroundVO.setBackgrounFilePath(finalPath);
 		
 		this.backgroundService.insert(backgroundVO);
-		return new ModelAndView("redirect:/viewBackground");
+		return new ModelAndView("redirect:/admin/viewBackground");
 	}
 	
-	@RequestMapping(value="viewBackground",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/viewBackground",method=RequestMethod.GET)
 	public ModelAndView viewBackground(@ModelAttribute BackgroundVO backgroundVO){
 		
 		List backgroundList = this.backgroundService.search();
-		return new ModelAndView("admin/viewBackground","backgroundList",backgroundList);
+		return new ModelAndView("/admin/viewBackground","backgroundList",backgroundList);
 	} 
 	
-	@RequestMapping(value="deleteBackground",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/deleteBackground",method=RequestMethod.GET)
 	public ModelAndView deleteBackground(@ModelAttribute BackgroundVO backgroundVO,@RequestParam String BackgroundId){
 		
 		backgroundVO.setId((Integer.parseInt(BackgroundId)));
@@ -89,11 +89,11 @@ public class BackgroundController {
 		
 		this.backgroundService.insert(backgroundVO2);
 		
-		return new ModelAndView("redirect:/viewBackground");
+		return new ModelAndView("redirect:/admin/viewBackground");
 		
 	}
 	
-	@RequestMapping(value="editBackground",method=RequestMethod.GET)
+	@RequestMapping(value="/admin/editBackground",method=RequestMethod.GET)
 	public ModelAndView editBackground(@ModelAttribute BackgroundVO backgroundVO,@RequestParam String BackgroundId){
 		backgroundVO.setId((Integer.parseInt(BackgroundId)));
 
