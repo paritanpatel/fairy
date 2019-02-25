@@ -8,7 +8,7 @@
 						<input type="text" placeholder="Search" name="s" class="edgt_search_field" autocomplete="off" />
 						<div class="edgtf-search-close">
 							<a href="#">
-								<span aria-hidden="true" class="edgtf-icon-font-elegant icon_close " ></span>							</a>
+								<span aria-hidden="true" class="edgtf-icon-font-elegant icon_close " ></span></a>
 						</div>
 					</div>
 				</div>
@@ -20,7 +20,7 @@
 <div class="edgtf-logo-wrapper">
     <a href="user.htm" style="height: 36px;">
         <img class="edgtf-normal-logo" src="<%=request.getContextPath()%>/userResources/images/logo-default.png" alt="logo"/>
-        <img class="edgtf-dark-logo" src="<%=request.getContextPath()%>/userResources/imageslogo-dark.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="<%=request.getContextPath()%>/userResources/images/logo-light.png" alt="light logo"/>    </a>
+        <img class="edgtf-dark-logo" src="<%=request.getContextPath()%>/userResources/images/logo-dark.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="<%=request.getContextPath()%>/userResources/images/logo-light.png" alt="light logo"/>    </a>
 </div>
 
                     </div>

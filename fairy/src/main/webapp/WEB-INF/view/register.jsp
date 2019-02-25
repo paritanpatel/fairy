@@ -32,7 +32,7 @@
                     </div>
 					<div class="card">
                         <div class="header">
-                            <p class="lead">Login to your account</p>
+                            <p class="lead">Create an account</p>
                         </div>
                         <div class="body">
                         <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
@@ -58,16 +58,11 @@
                                     <label for="signin-password" class="control-label sr-only">Password</label>
                                     <f:input type="password" path="loginVO.password" class="form-control" id="signin-password"  placeholder="password"/>
                                 </div>
-                                <div class="form-group clearfix">
-                                    <label class="fancy-checkbox element-left">
-                                        <input type="checkbox">
-                                        <span>Remember me</span>
-                                    </label>								
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">LOGIN</button>
+                                
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">REGISTER</button>
                                 <div class="bottom">
-                                    <span class="helper-text m-b-10"><i class="fa fa-lock"></i> <a href="page-forgot-password.html">Forgot password?</a></span>
-                                    <span>Don't have an account? <a href="register.html">Register</a></span>
+                                   
+                                    <span>Already have an account? <a href="/login">Login</a></span>
                                 </div>
                             </f:form>
                         </div>

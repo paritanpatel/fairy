@@ -27,6 +27,7 @@ public class LoginController
 	public ModelAndView loadLogin() 
 	{
 		return new ModelAndView("index");
+		
 	}
 	
 	@RequestMapping(value = "/admin/index", method = RequestMethod.GET)
@@ -54,7 +55,7 @@ public class LoginController
 	            request.getSession().setAttribute("tempStatus", "success");
 	            request.getSession().setAttribute("statusText", "Logout Successfully!");
 	        }
-	        return "login";
+	        return "/";
 	}
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public ModelAndView load() {
