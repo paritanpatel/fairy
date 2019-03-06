@@ -237,7 +237,7 @@ ouroffice@vangard.com
 </div>
 
 <br><br>
-<div></div>
+<div></div> 
 <div><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></div>
 <div class="wpcf7-response-output wpcf7-display-none"></div>
 
