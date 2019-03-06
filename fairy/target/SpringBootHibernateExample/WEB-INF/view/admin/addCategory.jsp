@@ -89,7 +89,7 @@
  			<%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
  
                         <div class="body">
-                            <f:form id="basic-form" method="post"  action="insertCategory" modelAttribute="CategoryVO">
+                            <f:form id="basic-form" method="post"  action="insertCategory" modelAttribute="CategoryVO" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label>Category Name</label>
                                     <f:input type="text" class="form-control" path="categoryName" required="required"/>
@@ -98,6 +98,11 @@
                                     <label>Category Description</label>
                                     <f:textarea class="form-control" rows="5" cols="30" path="categoryDescription" required="required"></f:textarea>
                                 </div>
+                                <div class="form-group">
+                                    <label>Attachment</label>
+                                    <input name="file" type="file" class="form-control" required="required"/>
+                                </div>
+                                
                                 <f:hidden path="id"/>
                                 <br>
                                 <button type="submit" class="btn btn-primary">Save</button>

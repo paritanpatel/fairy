@@ -22,6 +22,14 @@ public class CategoryVO {
 	@Column(name="categoryDescription")
 	private String categoryDescription;
 
+
+	@Column(name="categoryFileName")
+	private String categoryFileName;
+
+	@Column(name="categoryFilePath")
+	private String categoryFilePath;
+
+	
 	private boolean status = true;
 	
 	public boolean isStatus() {
@@ -54,6 +62,22 @@ public class CategoryVO {
 
 	public void setCategoryDescription(String categoryDescription) {
 		this.categoryDescription = categoryDescription;
+	}
+
+	public String getCategoryFileName() {
+		return categoryFileName;
+	}
+
+	public void setCategoryFileName(String categoryFileName) {
+		this.categoryFileName = categoryFileName;
+	}
+
+	public String getCategoryFilePath() {
+		return categoryFilePath;
+	}
+
+	public void setCategoryFilePath(String categoryFilePath) {
+		this.categoryFilePath = categoryFilePath;
 	}
 	
 	

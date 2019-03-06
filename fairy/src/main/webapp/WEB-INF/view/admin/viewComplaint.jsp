@@ -84,27 +84,32 @@ Overlay For Sidebars -->
                                         <th>No</th>
                                         <th>Complaint Subject</th>
                                         <th>Complaint Description</th>
+                                        <th>Complain status</th>
+                                        <th>reply</th>
+                                        <th>Attachment</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
-                                <c:forEach items="" var="i" varStatus="j">
+                                <c:forEach items="${complaintList}" var="i" varStatus="j">
                                 <tbody>
                                  <tr>
                                      	
                                      	<td>${j.count}</td>
-                                        <td></td>
-                                        <td></td>
-                                       
+                                        <td>${i.complaintSubject}</td>
+                                        <td>${i.complaintDescription}</td>
+                                        <td>${i.complaintStatus}</td>
+                                        <td>${i.reply}</td>
+                                        <td><a href="<%=request.getContextPath()%>/document/complaint/${i.complaintFileName}">view</a></td>
+                                        
                                         <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            	data-toggle="tooltip" data-original-title="Edit">
-                                            	<a href=""><i class="icon-pencil" aria-hidden="true"></i></a>
-                                            </button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            	data-toggle="tooltip" data-original-title="Remove">
-                                            	<a href=""><i class="icon-trash" aria-hidden="true"></i></a>
-                                            </button>
+                                           <c:if test="${i.complaintStatus eq 'PENDING' }">
+                                           	<a href="replytoUser?id=${i.id}">reply</a>
+                                           	</c:if>
+                                            <c:if test="${i.complaintStatus ne 'PENDING' }">
+                                            	RESOLVED
+                                            	</c:if>
                                         </td>
+                                        
                                      </tr>
                                 </tbody>
                                 </c:forEach>

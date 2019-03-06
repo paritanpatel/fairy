@@ -1,6 +1,10 @@
 package com.project.controller;
 
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
 import java.util.List;
+
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,6 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.project.model.CategoryVO;
@@ -31,15 +36,36 @@ public class SubCategoryController {
 	}
 	
 	@RequestMapping(value="/admin/insertSubCategory",method=RequestMethod.POST)
-	public ModelAndView insertSubCategory(@ModelAttribute SubCategoryVO subCategoryVO){
+	public ModelAndView insertSubCategory(@ModelAttribute SubCategoryVO subCategoryVO,@RequestParam("file") MultipartFile file,HttpSession session){
+		
+		String path = session.getServletContext().getRealPath("/");
+		String finalPath = path+"//document//subCategory//";
+		String fileName = file.getOriginalFilename();
+		
+		try 
+		{
+			byte[] b = file.getBytes();
+			
+			BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(finalPath+fileName));
+			bufferedOutputStream.write(b);
+			bufferedOutputStream.flush();
+			bufferedOutputStream.close();
+			
+		} catch (Exception e) {
+				e.printStackTrace();
+		}
+		
+		subCategoryVO.setSubCategorFileName(fileName);
+		subCategoryVO.setSubCategorFilePath(finalPath);
 		subCategoryVO.setStatus(true);
 		this.subCategoryService.insert(subCategoryVO);
 		return new ModelAndView("redirect:/admin/viewSubCategory");
+		
 	}
 	
 	@RequestMapping(value="/admin/viewSubCategory",method=RequestMethod.GET)
 	public ModelAndView viewSubCategory(@ModelAttribute SubCategoryVO subCategoryVO){
-		List subcategoryList = this.subCategoryService.search();
+		List subcategoryList = this.subCategoryService.search(subCategoryVO);
 		return new ModelAndView("/admin/viewSubCategory","subcategoryList",subcategoryList);
 	}
 	

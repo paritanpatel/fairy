@@ -49,14 +49,14 @@
 										<ul>
 											<li id="nav-menu-item-601"
 												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
-												href="loadUserbackground.html"><span
+												href="loadUserBackground.html"><span
 													class="edgtf-item-outer"><span
 														class="edgtf-item-inner"><span
 															class="edgtf-item-text">Post Background</span></span><span
 														class="plus"></span></span></a></li>
 											<li id="nav-menu-item-601"
 												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
-												href="searchUserBackground.html"><span
+												href="viewUserBackground.html"><span
 													class="edgtf-item-outer"><span
 														class="edgtf-item-inner"><span
 															class="edgtf-item-text">view Background</span></span><span
@@ -82,7 +82,7 @@
 														class="plus"></span></span></a></li>
 											<li id="nav-menu-item-601"
 												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
-												href="viewPostCharater.html"><span
+												href="viewUserCharacter.html"><span
 													class="edgtf-item-outer"><span
 														class="edgtf-item-inner"><span
 															class="edgtf-item-text">view Character</span></span><span
@@ -103,6 +103,46 @@
 										class="edgtf-item-inner"><span class="edgtf-item-text">View
 												StoryBoard</span></span><span class="plus"></span></span></a></li>
 
+<li id="nav-menu-item-598"
+								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children edgtf-has-sub edgtf-menu-narrow edgtf-wide-background"><a
+								href="about.html" class="edgtf-no-link" style="cursor: default;"><span
+									class="edgtf-item-outer"><span class="edgtf-item-inner"><span
+											class="edgtf-item-text">Service</span></span><span class="plus"></span></span></a>
+								<div class="edgtf-menu-second">
+									<div class="edgtf-menu-inner">
+										<ul>
+											<li id="nav-menu-item-601"
+												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
+												href="loadComplaint.html"><span class="edgtf-item-outer"><span
+														class="edgtf-item-inner"><span
+															class="edgtf-item-text">Post Complain</span></span><span
+														class="plus"></span></span></a></li>
+											<li id="nav-menu-item-601"
+												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
+												href="loadFeedback.html"><span class="edgtf-item-outer"><span
+														class="edgtf-item-inner"><span
+															class="edgtf-item-text">Post Feedback</span></span><span
+														class="plus"></span></span></a></li>
+
+											<li id="nav-menu-item-601"
+												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
+												href="viewUserComplaint.html"><span
+													class="edgtf-item-outer"><span
+														class="edgtf-item-inner"><span
+															class="edgtf-item-text">View Complain</span></span><span
+														class="plus"></span></span></a></li>
+											<li id="nav-menu-item-601"
+												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
+												href="viewUserFeedback.html"><span
+													class="edgtf-item-outer"><span
+														class="edgtf-item-inner"><span
+															class="edgtf-item-text">View Feedback</span></span><span
+														class="plus"></span></span></a></li>
+											
+
+										</ul>
+									</div>
+								</div></li>
 
 
 
@@ -128,52 +168,15 @@
 														class="plus"></span></span></a></li>
 											<li id="nav-menu-item-601"
 												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
-												href="changeprofile.html"><span class="edgtf-item-outer"><span
+												href="changePassword.html"><span class="edgtf-item-outer"><span
 														class="edgtf-item-inner"><span
 															class="edgtf-item-text">Change Password </span></span><span
 														class="plus"></span></span></a></li>
-											<li id="nav-menu-item-601"
-												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background">
-												<a href="spring_logout"><span class="edgtf-item-outer"><span
-														class="edgtf-item-inner"><span
-															class="edgtf-item-text">Logout </span></span><span class="plus"></span></span></a>
-											</li>
+											
 										</ul>
 									</div>
 								</div>
-							<li id="nav-menu-item-598"
-								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children edgtf-has-sub edgtf-menu-narrow edgtf-wide-background"><a
-								href="about.html" class="edgtf-no-link" style="cursor: default;"><span
-									class="edgtf-item-outer"><span class="edgtf-item-inner"><span
-											class="edgtf-item-text">Service</span></span><span class="plus"></span></span></a>
-								<div class="edgtf-menu-second">
-									<div class="edgtf-menu-inner">
-										<ul>
-											<li id="nav-menu-item-601"
-												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
-												href="loadComplain.html"><span class="edgtf-item-outer"><span
-														class="edgtf-item-inner"><span
-															class="edgtf-item-text">Post Complain</span></span><span
-														class="plus"></span></span></a></li>
-											<li id="nav-menu-item-601"
-												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
-												href="loadfeedback.html"><span class="edgtf-item-outer"><span
-														class="edgtf-item-inner"><span
-															class="edgtf-item-text">Post Feedback</span></span><span
-														class="plus"></span></span></a></li>
-
-											<li id="nav-menu-item-601"
-												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
-												href="viewUserComplain.html"><span
-													class="edgtf-item-outer"><span
-														class="edgtf-item-inner"><span
-															class="edgtf-item-text">view Complain</span></span><span
-														class="plus"></span></span></a></li>
-
-										</ul>
-									</div>
-								</div></li>
-							<li id="nav-menu-item-598"
+														<li id="nav-menu-item-598"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children edgtf-has-sub edgtf-menu-narrow edgtf-wide-background"><a
 								href="/logout" class="edgtf-no-link"
 								style="cursor: default;"><span class="edgtf-item-outer"><span

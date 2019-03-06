@@ -84,27 +84,15 @@ Overlay For Sidebars -->
                                         <th>No</th>
                                         <th>Feedback</th>
                                         <th>Rating</th>
-                                        <th>Action</th>
                                     </tr>
                                 </thead>
-                                <c:forEach items="" var="i" varStatus="j">
+                                <c:forEach items="${feedbackList}" var="i" varStatus="j">
                                 <tbody>
                                  <tr>
-                                     	
                                      	<td>${j.count}</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>${i.feedBack}</td>
+                                        <td>${i.rating}</td>
                                        
-                                        <td class="actions">
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
-                                            	data-toggle="tooltip" data-original-title="Edit">
-                                            	<a href=""><i class="icon-pencil" aria-hidden="true"></i></a>
-                                            </button>
-                                            <button class="btn btn-sm btn-icon btn-pure btn-default on-default button-remove"
-                                            	data-toggle="tooltip" data-original-title="Remove">
-                                            	<a href=""><i class="icon-trash" aria-hidden="true"></i></a>
-                                            </button>
-                                        </td>
                                      </tr>
                                 </tbody>
                                 </c:forEach>

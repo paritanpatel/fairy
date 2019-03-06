@@ -109,12 +109,12 @@
                                 </ul>
                             </li>
                            
-                            <!-- ******************************* MANAGE COMPLAIN ******************************* -->
+                            <!-- ******************************* MANAGE COMPLAINT ******************************* -->
                            
                             <li>
-                                <a href="#Widgets" class="has-arrow"><i class="icon-puzzle"></i><span>Manage Complain</span></a>
+                                <a href="#Widgets" class="has-arrow"><i class="icon-puzzle"></i><span>Manage Complaint</span></a>
                                 <ul>
-                                    <li><a href="widgets-statistics.html">View Complain</a></li>
+                                    <li><a href="viewComplaint">View Complaint</a></li>
                                 </ul>
                             </li>
                            
@@ -123,7 +123,7 @@
                             <li>
                                 <a href="#Pages" class="has-arrow"><i class="icon-docs"></i><span>Manage Feedback</span></a>
                                 <ul>
-                                    <li><a href="page-blank.html">View Feedback</a> </li>
+                                    <li><a href="viewFeedback">View Feedback</a> </li>
                                 </ul>
                             </li>
                         </ul>

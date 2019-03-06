@@ -34,12 +34,21 @@ public class CharacterController {
 	CharacterService characterService;
 	
 	@RequestMapping(value="/admin/loadCharacter",method=RequestMethod.GET)
-	public ModelAndView loadCharacter(@ModelAttribute CategoryVO categoryVO)
+	public ModelAndView loadCharacter(@ModelAttribute CategoryVO categoryVO,SubCategoryVO subCategoryVO)
 	{
 		List categoryList = this.categoryService.search();
-		List subcategoryList = this.subCategoryService.search();
+		List subcategoryList = this.subCategoryService.search(subCategoryVO);
 		
 		return new ModelAndView("/admin/addCharacter","CharacterVO",new CharacterVO()).addObject("categoryList",categoryList).addObject("subcategoryList",subcategoryList);
+	}
+	
+	@RequestMapping(value="/user/loadUserCharacter",method=RequestMethod.GET)
+	public ModelAndView loadUserCharacter(@ModelAttribute CategoryVO categoryVO,SubCategoryVO subCategoryVO)
+	{
+		List categoryList = this.categoryService.search();
+		List subcategoryList = this.subCategoryService.search(subCategoryVO);
+		
+		return new ModelAndView("/user/addCharacter","CharacterVO",new CharacterVO()).addObject("categoryList",categoryList).addObject("subcategoryList",subcategoryList);
 	}
 	
 	@RequestMapping(value="/admin/insertCharacter",method=RequestMethod.POST)
@@ -69,10 +78,43 @@ public class CharacterController {
 		return new ModelAndView("redirect:/admin/viewCharacter");
 	}
 	
+	@RequestMapping(value="/user/insertUserCharacter",method=RequestMethod.POST)
+	public ModelAndView insertUserCharacter(@ModelAttribute CharacterVO characterVO,@RequestParam("file") MultipartFile file,HttpSession session)
+	{
+		String path = session.getServletContext().getRealPath("/");
+		String finalPath = path+"//document//character//";
+		String fileName = file.getOriginalFilename();
+		
+		try 
+		{
+			byte[] b = file.getBytes();
+			
+			BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(finalPath+fileName));
+			bufferedOutputStream.write(b);
+			bufferedOutputStream.flush();
+			bufferedOutputStream.close();
+			
+		} catch (Exception e) {
+				e.printStackTrace();
+		}
+		
+		characterVO.setCharacterFileName(fileName);
+		characterVO.setCharacterFilePath(finalPath);
+		
+		this.characterService.insert(characterVO);
+		return new ModelAndView("redirect:/user/viewUserCharacter");
+	}
+	
+	
 	@RequestMapping(value="/admin/viewCharacter",method=RequestMethod.GET)
-	public ModelAndView viewCharacter(@ModelAttribute CharacterVO characterVO){
+	public ModelAndView viewCharacter(){
 		List characterList = this.characterService.search();
 		return new ModelAndView("/admin/viewCharacter","characterList",characterList);
+	}
+	@RequestMapping(value="/user/viewUserCharacter",method=RequestMethod.GET)
+	public ModelAndView viewUserCharacter(@ModelAttribute CharacterVO characterVO){
+		List characterList = this.characterService.search();
+		return new ModelAndView("/user/viewCharacter","characterList",characterList);
 	}
 	
 	@RequestMapping(value="/admin/deleteCharacter",method=RequestMethod.GET)
@@ -99,7 +141,7 @@ public class CharacterController {
 		CharacterVO characterVO2= (CharacterVO) characterList.get(0);
 		
 		List categoryList = this.categoryService.search();
-		List subcategoryList = this.subCategoryService.search();
+		List subcategoryList = this.subCategoryService.search(subCategoryVO);
 		return new ModelAndView("/admin/addCharacter","CharacterVO",characterVO2).addObject("categoryList",categoryList).addObject("subcategoryList",subcategoryList);		
 	}
 

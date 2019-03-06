@@ -85,6 +85,7 @@ Overlay For Sidebars -->
                                         <th>Category Name</th>
                                         <th>Sub-category Name</th>
                                         <th>Sub-category Description</th>
+                                        <th>View</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -95,6 +96,7 @@ Overlay For Sidebars -->
                                         <td>${i.categoryVO.categoryName}</td>
                                         <td>${i.subCategoryName}</td>
                                         <td>${i.subCategoryDescription}</td>
+                                        <td><img src="<%=request.getContextPath()%>/document/subCategory/${i.subCategorFileName}" style="height: 250px;width: 400px;"></td>
                                         <td class="actions">
                                             
                                             <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"

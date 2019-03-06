@@ -23,6 +23,12 @@ public class SubCategoryVO {
 	@Column(name="subCategoryDescription")
 	private String subCategoryDescription;
 	
+	@Column(name="subCategorFileName")
+	private String subCategorFileName;
+
+	@Column(name="subCategorFilePath")
+	private String subCategorFilePath;
+	
 	@Column(name="status")
 	private boolean status;
 
@@ -68,6 +74,22 @@ public class SubCategoryVO {
 
 	public void setCategoryVO(CategoryVO categoryVO) {
 		this.categoryVO = categoryVO;
+	}
+
+	public String getSubCategorFileName() {
+		return subCategorFileName;
+	}
+
+	public void setSubCategorFileName(String subCategorFileName) {
+		this.subCategorFileName = subCategorFileName;
+	}
+
+	public String getSubCategorFilePath() {
+		return subCategorFilePath;
+	}
+
+	public void setSubCategorFilePath(String subCategorFilePath) {
+		this.subCategorFilePath = subCategorFilePath;
 	}
 	
 

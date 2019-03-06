@@ -84,6 +84,7 @@ Overlay For Sidebars -->
                                         <th>No</th>
                                         <th>Category Name</th>
                                         <th>Category Description</th>
+                                        <th>View</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -94,7 +95,7 @@ Overlay For Sidebars -->
                                      	<td>${j.count}</td>
                                         <td>${i.categoryName}</td>
                                         <td>${i.categoryDescription}</td>
-                                       
+                                       <td><img src="<%=request.getContextPath()%>/document/category/${i.categoryFileName}" style="height: 250px;width: 400px;"></td>
                                         <td class="actions">
                                             <button class="btn btn-sm btn-icon btn-pure btn-default on-default m-r-5 button-edit"
                                             	data-toggle="tooltip" data-original-title="Edit">

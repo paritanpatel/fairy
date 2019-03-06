@@ -89,7 +89,7 @@
                          <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
                         
                         <div class="body">
-                            <f:form id="basic-form" method="post" action="insertSubCategory" modelAttribute="SubCategoryVO">
+                            <f:form id="basic-form" method="post" action="insertSubCategory" modelAttribute="SubCategoryVO" enctype="multipart/form-data">
                                 
                                <%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
                                 <div class="form-group">
@@ -112,6 +112,11 @@
                                     <label>Sub-category Description</label>
                                     <f:textarea class="form-control" rows="5" cols="30" required="required" path="subCategoryDescription"></f:textarea>
                                 </div>
+                                <div class="form-group">
+                                    <label>Attachment</label>
+                                    <input name="file" type="file" class="form-control" required="required"/>
+                                </div>
+                                
                                 <br>
                                 
                                 <f:hidden path="id"/>
