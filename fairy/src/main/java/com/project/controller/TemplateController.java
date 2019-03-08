@@ -52,7 +52,7 @@ public class TemplateController
 		return new ModelAndView("redirect:/admin/viewTemplate");
 	}
 	
-	@RequestMapping(value="editTemplate",method=RequestMethod.GET)
+	@RequestMapping(value="admin/editTemplate",method=RequestMethod.GET)
 	public ModelAndView editTemplate(@ModelAttribute TemplateVO templateVO,@RequestParam String templateId){
 		
 		templateVO.setId(Integer.parseInt(templateId));

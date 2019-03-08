@@ -18,9 +18,10 @@
                  --><div class="edgtf-position-left-inner">
                         
 <div class="edgtf-logo-wrapper">
-    <a href="user.htm" style="height: 36px;">
+    <a href="index" style="height: 36px;">
         <img class="edgtf-normal-logo" src="<%=request.getContextPath()%>/userResources/images/logo-default.png" alt="logo"/>
-        <img class="edgtf-dark-logo" src="<%=request.getContextPath()%>/userResources/images/logo-dark.png" alt="dark logoo"/>        <img class="edgtf-light-logo" src="<%=request.getContextPath()%>/userResources/images/logo-light.png" alt="light logo"/>    </a>
+        <img class="edgtf-dark-logo" src="<%=request.getContextPath()%>/userResources/images/logo-dark.png" alt="dark logoo"/>       
+         <img class="edgtf-light-logo" src="<%=request.getContextPath()%>/userResources/images/logo-light.png" alt="light logo"/>    </a>
 </div>
 
                     </div>
@@ -32,7 +33,7 @@
 						<ul id="menu-main-menu" class="clearfix">
 							<li id="nav-menu-item-573"
 								class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children edgtf-has-sub edgtf-menu-wide edgtf-wide-background edgtf-active-item"><a
-								href="user.html" class="current edgtf-no-link"
+								href="index" class="current edgtf-no-link"
 								style="cursor: default;"><span class="edgtf-item-outer"><span
 										class="edgtf-item-inner"><span class="edgtf-item-text">Home</span></span><span
 										class="plus"></span></span></a></li>
@@ -162,7 +163,7 @@
 										<ul>
 											<li id="nav-menu-item-601"
 												class="menu-item menu-item-type-post_type menu-item-object-page edgtf-wide-background"><a
-												href="editprofile.html"><span class="edgtf-item-outer"><span
+												href="editProfile.html"><span class="edgtf-item-outer"><span
 														class="edgtf-item-inner"><span
 															class="edgtf-item-text">Edit Profile</span></span><span
 														class="plus"></span></span></a></li>

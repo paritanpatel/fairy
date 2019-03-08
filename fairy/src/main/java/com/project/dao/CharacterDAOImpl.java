@@ -49,4 +49,17 @@ public class CharacterDAOImpl implements CharacterDAO
 		return characterList;
 	}
 	
+	public List searchBysubCategory(CharacterVO characterVO){
+		List characterList = new ArrayList();
+		try{
+			Session session = this.sessionFactory.getCurrentSession();
+			Query q= session.createQuery("from CharacterVO where subCategoryVO='"+characterVO.getSubCategoryVO().getId()+"'");
+			characterList = q.list();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		return characterList;
+	}
+	
 }

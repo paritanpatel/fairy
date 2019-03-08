@@ -12,4 +12,6 @@ public interface BackgroundDAO {
 
 	public List edit(BackgroundVO backgroundVO);
 
+	public List searchBysubCategory(BackgroundVO backgroundVO);
+
 }

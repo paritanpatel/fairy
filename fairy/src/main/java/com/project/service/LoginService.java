@@ -25,13 +25,11 @@ public class LoginService
 
 	@Transactional
 	public void insertLogin(LoginVO loginVO) {
-		// TODO Auto-generated method stub
 		loginDAO.insertLogin(loginVO);
 	}
 
 	@Transactional
 	public List searchLoginID(String loginService) {
-		// TODO Auto-generated method stub
 		List ls = loginDAO.searchLoginID(loginService);
 		return ls;
 	}

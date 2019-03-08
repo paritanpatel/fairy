@@ -36,4 +36,10 @@ public class CharacterService {
 		return characterList;
 	}
 
+	@Transactional
+	public List searchBysubCategory(CharacterVO characterVO) {
+		List characterList = this.characterDAO.searchBysubCategory(characterVO);
+		return characterList;
+	}
+
 }

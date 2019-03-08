@@ -33,6 +33,7 @@
 					<div class="card">
                         <div class="header">
                             <p class="lead">Login to your account</p>
+                            <p class="lead">${msg}</p>
                         </div>
                         <div class="body">
                         <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>

@@ -13,7 +13,7 @@
 
                 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
         
-	<title>Gallery Four Columns Wide &#8211; Illustrator</title>
+<title>Fairy Tales</title>
 <script type="application/javascript">var edgtCoreAjaxUrl = "http://illustrator.edge-themes.com/wp-admin/admin-ajax.php"</script><script type="application/javascript">var EdgefAjaxUrl = "http://illustrator.edge-themes.com/wp-admin/admin-ajax.php"</script><link rel='dns-prefetch' href='//maps.googleapis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />

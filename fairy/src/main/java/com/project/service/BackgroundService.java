@@ -33,4 +33,10 @@ public class BackgroundService {
 		return backgroundList;
 	}
 
+	@Transactional
+	public List searchBysubCategory(BackgroundVO backgroundVO) {
+		List backgroundList = this.backgroundDAO.searchBysubCategory(backgroundVO);
+		return backgroundList;
+	}
+
 }

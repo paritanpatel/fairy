@@ -48,6 +48,7 @@ public class LoginController
 	@RequestMapping(value = "/logout", method = {RequestMethod.POST, RequestMethod.GET})	
 	public String viewUserDetails(ModelMap model,HttpServletResponse response,HttpServletRequest request) {
 
+		
 		  Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 	        if (auth != null) {
 	            new SecurityContextLogoutHandler().logout(request, response, auth);

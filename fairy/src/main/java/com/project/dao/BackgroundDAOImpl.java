@@ -48,4 +48,17 @@ public class BackgroundDAOImpl implements BackgroundDAO {
 		}
 		return backgroundList;
 	}
+	
+	public List searchBysubCategory(BackgroundVO backgroundVO){
+		List backgroundList = new ArrayList();
+		try{
+			Session session = this.sessionFactory.getCurrentSession();
+			Query q= session.createQuery("from BackgroundVO where subCategoryVO.id='"+backgroundVO.getSubCategoryVO().getId()+"'");
+			backgroundList = q.list();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		return backgroundList;
+	}
 }

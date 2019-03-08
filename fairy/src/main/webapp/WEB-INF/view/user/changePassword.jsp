@@ -13,7 +13,7 @@
 
                 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
         
-	<title>About us &#8211; Illustrator</title>
+<title>Fairy Tales</title>
 <script type="application/javascript">var edgtCoreAjaxUrl = "http://illustrator.edge-themes.com/wp-admin/admin-ajax.php"</script><script type="application/javascript">var EdgefAjaxUrl = "http://illustrator.edge-themes.com/wp-admin/admin-ajax.php"</script><link rel='dns-prefetch' href='//maps.googleapis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
@@ -210,7 +210,46 @@ ouroffice@vangard.com
 <div class="screen-reader-response"></div>
 <%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
 
-<f:form action="insertComplaint.html" method="post" modelAttribute="ComplaintVO" class="wpcf7-form cf7_custom_style_2" enctype="multipart/form-data">
+
+
+
+
+
+<script type="text/javascript">
+
+function resetDiv(){
+	var errorMessage = document.getElementById('errorMessage');
+	errorMessage.style.display="none";
+}
+
+function checkPwd() {
+	
+	
+	var newPassword = document.getElementById('newPassword');
+	var confirmPassword = document.getElementById('confirmPassword');
+	var errorMessage = document.getElementById('errorMessage');
+
+	errorMessage.style.display="none";
+	
+	console.log( " ******************** " + newPassword.value);
+	console.log( " ******************** " + confirmPassword.value);
+
+	console.log(newPassword.value == confirmPassword.value);
+	
+	if(newPassword.value == confirmPassword.value){
+		return true;
+	}else{
+		confirmPassword.value = '';
+		errorMessage.style.display="";
+		errorMessage.style.color="red";
+	}
+
+}
+
+</script>
+
+
+<f:form action="changePasswordVerify.html" method="post" modelAttribute="ComplaintVO" class="wpcf7-form cf7_custom_style_2" enctype="multipart/form-data">
 
 
 <div style="display: none;">
@@ -224,14 +263,17 @@ ouroffice@vangard.com
 <div class="edgtf-cf7-two-columns-50-50-inner">
 
 <span class="wpcf7-form-control-wrap your-name">Old Password:
-	<input type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="OLD PASSWORD" name="oldPassword"/>
+	<input type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="OLD PASSWORD" name="oldPassword" required="required" onchange="resetDiv()"/>
 </span>
 <span class="wpcf7-form-control-wrap your-name">New Password:
-	<input type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="NEW PASSWORD" name="newPassword"/>
+	<input type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="NEW PASSWORD" name="newPassword" id="newPassword" required="required" onchange="resetDiv()"/>
 </span>
 <span class="wpcf7-form-control-wrap your-name">Confirm Password:
-	<input type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="CONFIRM PASSWORD" onblur="checkPwd()" name="confirmPassword"/>
+	<input type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="CONFIRM PASSWORD" onblur="checkPwd()" name="confirmPassword" id="confirmPassword" required="required" onchange="resetDiv()"/>
 </span>
+<div style="display: none;" id="errorMessage">
+new password and confirm password must be same
+</div>
 
 </div>
 </div>
@@ -243,14 +285,7 @@ ouroffice@vangard.com
 
 </f:form>
 
-<script type="text/javascript">
 
-
-function checkPwd() {
-	
-}
-
-</script>
 
 
 

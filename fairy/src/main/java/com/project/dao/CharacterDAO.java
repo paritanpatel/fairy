@@ -11,4 +11,6 @@ public interface CharacterDAO
 	public List search();
 
 	public List edit(CharacterVO characterVO);
+
+	public List searchBysubCategory(CharacterVO characterVO);
 }
