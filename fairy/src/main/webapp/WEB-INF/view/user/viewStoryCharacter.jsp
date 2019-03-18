@@ -209,7 +209,7 @@ ouroffice@vangard.com
 		<div class="edgtf-item-image-holder">
 			<div class="edgtf-item-image-holder-inner">
 		
-				<img style="width:300px;height:300px" src="<%=request.getContextPath()%>/document/background/${i.characterFileName}"
+				<img style="width:300px;height:300px" src="<%=request.getContextPath()%>/document/character/${i.characterFileName}"
 				 class="attachment-full size-full wp-post-image"
 				  alt="g" srcset="<%=request.getContextPath()%>/document/character/${i.characterFileName} 1000w, <%=request.getContextPath()%>/document/character/${i.characterFileName} 222w, <%=request.getContextPath()%>/document/character/${i.characterFileName} 768w, 
 				  <%=request.getContextPath()%>/document/character/${i.characterFileName} 756w" sizes="(max-width: 1000px) 100vw, 1000px" />			</div>

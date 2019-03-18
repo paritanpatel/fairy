@@ -201,18 +201,24 @@ ouroffice@vangard.com
 <div class="edgtf-full-width-inner">
 
 
-						<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class = "edgtf-portfolio-list-holder-outer edgtf-ptf-gallery edgtf-ptf-with-space edgtf-ptf-space-large edgtf-ptf-hover-zoom-out-simple edgtf-ptf-four-columns" data-next-page= "2" data-type= "gallery" data-columns= "4" data-grid-size= "three" data-order-by= "title" data-order= "DESC" data-number= "12" data-image-size= "full" data-hover-type= "zoom-out-simple" data-filter= "no" data-filter-order-by= "name" data-category= "cartooning-design" data-show-more= "none" data-title-tag= "h5" data-max-num-pages = 2><div class = "edgtf-portfolio-list-holder clearfix" >
-<c:forEach items="${List}" var="i">
-<article class="edgtf-portfolio-item mix portfolio_category_62 portfolio_category_59" >
+<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class = "edgtf-portfolio-list-holder-outer edgtf-ptf-gallery edgtf-ptf-with-space edgtf-ptf-space-large edgtf-ptf-hover-zoom-out-simple edgtf-ptf-four-columns" data-next-page= "2" data-type= "gallery" data-columns= "4" data-grid-size= "three" data-order-by= "title" data-order= "DESC" data-number= "12" data-image-size= "full" data-hover-type= "zoom-out-simple" data-filter= "no" data-filter-order-by= "name" data-category= "cartooning-design" data-show-more= "none" data-title-tag= "h5" data-max-num-pages = 2><div class = "edgtf-portfolio-list-holder clearfix" >
+
+
+<c:forEach begin="1" end="${rows}">
+
+
+<c:forEach begin="1" end="${cols}">
+
+<article class="edgtf-portfolio-item mix portfolio_category_62 portfolio_category_59" style="width:${100/rows}%; ">
 	<div class="edgtf-portfolio-item-inner">
-		<a class="edgtf-portfolio-link" href="#"></a>
 		<div class="edgtf-item-image-holder">
-			<div class="edgtf-item-image-holder-inner">
 		
-				<img style="width:300px;height:300px" src="<%=request.getContextPath()%>/document/background/${i.characterFileName}"
-				 class="attachment-full size-full wp-post-image"
-				  alt="g" srcset="<%=request.getContextPath()%>/document/character/${i.characterFileName} 1000w, <%=request.getContextPath()%>/document/character/${i.characterFileName} 222w, <%=request.getContextPath()%>/document/character/${i.characterFileName} 768w, 
-				  <%=request.getContextPath()%>/document/character/${i.characterFileName} 756w" sizes="(max-width: 1000px) 100vw, 1000px" />			</div>
+			<div class="edgtf-item-image-holder-inner" style="width:100%;background:url('<%=request.getContextPath()%>/document/background/${BackgroundVO.backgrounFileName}')">
+		<img alt="" src="<%=request.getContextPath()%>/document/character/${CharacterVO.characterFileName}">
+		
+				  </div>
+	
+	
 		
 		</div>
 		<div class="edgtf-item-text-overlay">
@@ -221,13 +227,16 @@ ouroffice@vangard.com
 
 	<h5 class="edgtf-item-title">
 		
-			${i.characterName}		
+			<%-- ${i.characterName}		 --%>
 	</h5>
 
 </div>			</div>
 		</div>
 	</div>
+	<textarea style="width:100%;height:50px"></textarea>
 </article>
+
+</c:forEach>
 </c:forEach>
 
 
