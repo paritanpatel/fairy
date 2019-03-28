@@ -372,7 +372,7 @@ var edgtfPerPageVars = {"vars":{"edgtfStickyScrollAmount":0,"edgtfPassepartout":
         });
     	
         link.href = document.getElementById(canvasId).toDataURL();
-        link.download = filename;
+        link.download = filename;   
         console.log(link, canvasId, filename);
     }
     document.getElementById('download').addEventListener('click', function () {
