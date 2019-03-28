@@ -124,7 +124,7 @@ public class ComplaintController {
 			
 			List complaintList = this.complaintService.viewUserComplaint(complaintVO);
 			
-			return new ModelAndView("/user/view","complaintList",complaintList);
+			return new ModelAndView("/user/viewComplaint","complaintList",complaintList);
 		}
 		
 		

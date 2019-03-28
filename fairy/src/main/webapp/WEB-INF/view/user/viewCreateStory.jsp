@@ -195,13 +195,25 @@ ouroffice@vangard.com
             </div>
         </div>
     </div>
+<%@taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<f:form action="insertStory.html" method="post" modelAttribute="StoryVO" class="wpcf7-form cf7_custom_style_2" enctype="multipart/form-data">
 
+<div class="edgtf-cf7-two-columns clearfix" style="margin-top:10px;">
+<div class="edgtf-cf7-two-columns-50-50-inner" style="margin:0 auto;width:50%;">
+<span class="wpcf7-form-control-wrap your-name">
+
+<input type="text" name="storyName" class="wpcf7-form-control wpcf7-text" placeholder="STORY NAME">
+</span>
+</div>
+</div>
 
 <div class="edgtf-full-width">
 <div class="edgtf-full-width-inner">
 
-
-<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class = "edgtf-portfolio-list-holder-outer edgtf-ptf-gallery edgtf-ptf-with-space edgtf-ptf-space-large edgtf-ptf-hover-zoom-out-simple edgtf-ptf-four-columns" data-next-page= "2" data-type= "gallery" data-columns= "4" data-grid-size= "three" data-order-by= "title" data-order= "DESC" data-number= "12" data-image-size= "full" data-hover-type= "zoom-out-simple" data-filter= "no" data-filter-order-by= "name" data-category= "cartooning-design" data-show-more= "none" data-title-tag= "h5" data-max-num-pages = 2><div class = "edgtf-portfolio-list-holder clearfix" >
+<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner ">
+<div class="wpb_wrapper">
+<div class = "edgtf-portfolio-list-holder-outer edgtf-ptf-gallery edgtf-ptf-with-space edgtf-ptf-space-large edgtf-ptf-hover-zoom-out-simple edgtf-ptf-four-columns" data-next-page= "2" data-type= "gallery" data-columns= "4" data-grid-size= "three" data-order-by= "title" data-order= "DESC" data-number= "12" data-image-size= "full" data-hover-type= "zoom-out-simple" data-filter= "no" data-filter-order-by= "name" data-category= "cartooning-design" data-show-more= "none" data-title-tag= "h5" data-max-num-pages = 2>
+<div class = "edgtf-portfolio-list-holder clearfix" >
 
 
 <c:forEach begin="1" end="${rows}">
@@ -233,24 +245,26 @@ ouroffice@vangard.com
 </div>			</div>
 		</div>
 	</div>
-	<textarea style="width:100%;height:50px"></textarea>
+	<textarea style="width:100%;height:50px" name="message"></textarea>
 </article>
 
 </c:forEach>
 </c:forEach>
 
+<div><input type="submit" value="Submit" align="middle" class="wpcf7-form-control wpcf7-submit" /></div>
+
+<div class='edgtf-portfolio-gap'></div>
+<div class='edgtf-portfolio-gap'></div>
+<div class='edgtf-portfolio-gap'></div>
+<div class='edgtf-portfolio-gap'></div>
 
 
-<div class='edgtf-portfolio-gap'></div>
-<div class='edgtf-portfolio-gap'></div>
-<div class='edgtf-portfolio-gap'></div>
-<div class='edgtf-portfolio-gap'></div>
 </div></div></div></div></div></div></div>
 							</div>
 </div>
 </div> <!-- close div.content_inner -->
 </div>  <!-- close div.content -->
-
+</f:form>
  <footer>
         
 <jsp:include page="footer.jsp"></jsp:include>

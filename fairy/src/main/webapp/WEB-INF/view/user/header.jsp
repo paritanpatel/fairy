@@ -99,7 +99,7 @@
 												Story</span></span><span class="plus"></span></span></a></li>
 							<li id="nav-menu-item-598"
 								class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children edgtf-has-sub edgtf-menu-narrow edgtf-wide-background"><a
-								href="viewStoryBoard.html" class="edgtf-no-link"
+								href="viewOwnStory.html" class="edgtf-no-link"
 								style="cursor: default;"><span class="edgtf-item-outer"><span
 										class="edgtf-item-inner"><span class="edgtf-item-text">View
 												StoryBoard</span></span><span class="plus"></span></span></a></li>

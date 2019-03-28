@@ -12,6 +12,7 @@ com\project\model\RegisterVO.class
 com\project\dao\LoginDAO.class
 com\project\utils\Basemethods.class
 com\project\dao\TemplateDAO.class
+com\project\dao\StoryDAO.class
 com\project\HibernateConfiguration.class
 com\project\dao\CategoryDAO.class
 com\project\dao\SubCategoryDAOImpl.class
@@ -23,6 +24,7 @@ com\project\service\LoginService.class
 com\project\dao\LoginDAOImpl.class
 com\project\model\CategoryVO.class
 com\project\dao\FeedbackDAOImpl.class
+com\project\model\StoryVO.class
 com\project\model\FeedbackVO.class
 com\project\dao\SubCategoryDAO.class
 com\project\service\FeedbackService.class
@@ -40,12 +42,14 @@ com\project\dao\RegisterDAO.class
 com\project\controller\RegisterController.class
 com\project\configuration\CustomizeAuthenticationSuccessHandler.class
 com\project\MainMethod.class
+com\project\dao\StoryDAOImpl.class
 com\project\service\CategoryService.class
 com\project\service\ComplaintService.class
 com\project\model\TemplateVO.class
 com\project\configuration\SecurityConfiguration.class
 com\project\controller\TemplateController.class
 com\project\controller\CategoryController.class
+com\project\service\StoryService.class
 com\project\model\CharacterVO.class
 com\project\dao\BackgroundDAOImpl.class
 com\project\model\SubCategoryVO.class

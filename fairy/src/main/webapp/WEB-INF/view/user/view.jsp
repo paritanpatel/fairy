@@ -9,7 +9,7 @@
 
                 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
         
-	<title>A Moment of Truth &#8211; Illustrator</title>
+	<title>Fairy Tale</title>
 <script type="application/javascript">var edgtCoreAjaxUrl = "http://illustrator.edge-themes.com/wp-admin/admin-ajax.php"</script><script type="application/javascript">var EdgefAjaxUrl = "http://illustrator.edge-themes.com/wp-admin/admin-ajax.php"</script>
 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
 <script data-cfasync="false" type="text/javascript">//<![CDATA[
@@ -120,9 +120,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="vc_empty_space"  style="height: 21px" ><span class="vc_empty_space_inner"></span></div>
 
 
-
-<p>Lorem ipsum dolor sit amet, consecte adipi.
-Suspendisse ultrices hendrerit a vitae vel a sodales. Ac lectus vel risus suscipit sit amet hendrerit a venenatis.</p>
 
 <div class="vc_empty_space"  style="height: 24px" ><span class="vc_empty_space_inner"></span></div>
 
@@ -1066,113 +1063,11 @@ ouroffice@vangard.com
 			<div class="edgtf-post-image">
 			<img width="1300" height="535" src="<%=request.getContextPath()%>/userResources/images/blog-standard-img-2.jpg" class="attachment-full size-full wp-post-image" alt="m" srcset="<%=request.getContextPath()%>/userResources/images/blog-standard-img-2.jpg 1300w, <%=request.getContextPath()%>/userResources/images/blog-standard-img-2-300x123.jpg 300w, <%=request.getContextPath()%>/userResources/images/blog-standard-img-2-768x316.jpg 768w, <%=request.getContextPath()%>/userResources/images/blog-standard-img-2-1024x421.jpg 1024w" sizes="(max-width: 1300px) 100vw, 1300px" />	</div>
 		<div class="edgtf-post-text">
-			<div class="edgtf-post-text-inner clearfix">
-				<h4 class="edgtf-post-title">
-	A Moment of Truth</h4>
-				<div class="vc_row wpb_row vc_row-fluid edgtf-section edgtf-content-aligment-left" style=""><div class="clearfix edgtf-full-section-inner"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at felis aliquam libero tempus iaculis in et nisi. Praesent a sem vel tellus dignissim convallis nec eget diam. Nullam sed ex aliquet, condimentum est et, posuere nisl. Aenean pretium vel tortor ac laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eget facilisis orci.</p>
-
-		</div>
-	</div>
-<div class="vc_empty_space"  style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday life, All Year Round. Sometimes the simplest things are the hardest to find you. Sometimes the simplest things are the hardest to find. So we created a new line for everyday life, All Year Round. Sometimes the simplest things are the hardest to find you. Sometimes the simplest things are the hardest to find. So we created a new line for everyday life, All Year Round. Sometimes the simplest things are the hardest to find you.</p>
-
-		</div>
-	</div>
-<div class="vc_empty_space"  style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-
-<blockquote class="edgtf-blockquote-shortcode"  >
-	<span class="edgtf-icon-quotations-holder">
-		<span aria-hidden="true" class="edgtf-icon-font-elegant icon_quotations " ></span>	</span>
-	<p class="edgtf-blockquote-text">
-		Sometimes the simplest things are the hardest to find. So we created a new line for everyday life, All Year simplest things are the hardest to find you. Sometimes the simplest things are the hardest to find. So we cre eryday life, All Year Round. Sometimes the simplest things are the hardest to find you. Sometimes the simplest things are the hardest to find.	</p>
-</blockquote><div class="vc_empty_space"  style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at felis aliquam libero tempus iaculis in et nisi. Praesent a sem vel tellus dignissim convallis nec eget diam. Nullam sed ex aliquet, condimentum est et, posuere nisl. Aenean pretium vel tortor ac laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eget facilisis orci.</p>
-
-		</div>
-	</div>
-<div class="vc_empty_space"  style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-
-<blockquote class="edgtf-blockquote-shortcode"  >
-	<span class="edgtf-icon-quotations-holder">
-		<span aria-hidden="true" class="edgtf-icon-font-elegant icon_quotations " ></span>	</span>
-	<p class="edgtf-blockquote-text">
-		Sometimes the simplest things are the hardest to find. So we created a new line for everyday life, All Year simplest things are the hardest to find you. Sometimes the simplest things are the hardest to find. So we cre eryday life, All Year Round. Sometimes the simplest things are the hardest to find you. Sometimes the simplest things are the hardest to find.	</p>
-</blockquote><div class="vc_empty_space"  style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<p>Sometimes the simplest things are the hardest to find. So we created a new line for everyday life, All Year Round. Sometimes the simplest things are the hardest to find you. Sometimes the simplest things are the hardest to find. So we created a new line for everyday life, All Year Round. Sometimes the simplest things are the hardest to find you. Sometimes the simplest things are the hardest to find. So we created a new line for everyday life, All Year Round. Sometimes the simplest things are the hardest to find you. This is Photoshop&#8217;s version  of Lorem Ipsn gravida nibh vel velit auctor aliquet. Aene sollic consequat ipsutis sem nibh id elit. Duis sed nibh vel a  sit amet nibh vulputate.</p>
-
-		</div>
-	</div>
-<div class="vc_empty_space"  style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
-</div></div></div></div></div>
-
-				
-				<div class="edgtf-post-info-holder edgtf-post-info-bottom">
-					<div class="edgtf-post-info-holder-left">
-						<div class="edgtf-post-info-date">
-			January 15, 2017	</div><div class="edgtf-post-info-author">
-	<a class="edgtf-post-info-author-link" href="http://illustrator.edge-themes.com/author/admin/">
-		admin	</a>
-</div><div class="edgtf-post-info-category">
-	in	<a href="http://illustrator.edge-themes.com/category/art/" rel="category tag">Art</a>, <a href="http://illustrator.edge-themes.com/category/design/" rel="category tag">Design</a></div>					</div>
-					<div class="edgtf-post-info-holder-right">
-						<div class="edgtf-post-info-comments-holder">
-	<a class="edgtf-post-info-comments" href="http://illustrator.edge-themes.com/a-moment-of-truth/#comments" target="_self">
-		<span class="icon_comment_alt"></span>3 Comments</a></div><div class="edgtf-blog-like">
-	<a href="#" class="edgtf-like" data-type="blog_single" id="edgtf-like-1153-849" title="Like this"><i class="icon_heart_alt" aria-hidden="true"></i><span>4 Likes</span></a></div>					</div>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 	</article>		<div class="edgtf-blog-single-navigation">
-		<div class="edgtf-blog-single-navigation-inner">
-							<div class="edgtf-blog-single-prev">
-					<a href="http://illustrator.edge-themes.com/desing-is-everywhere/" rel="prev"><div class="edgtf-nav-holder "><div class="edgtf-nav-image" style="background-image:url(<%=request.getContextPath()%>/userResources/images/blog-standard-img-6-550x535.jpg);"></div><div class="edgtf-nav-title"><span class="edgtf-nav-title-span">Desing is all</span><span class="edgtf-nav-text"><span class="edgtf-nav-arrows arrow_left"></span>Previous</span></div></div></a>				</div><!-- close div.blog_prev -->
-			
-			<div class="edgtf-blog-single-share">
-				<div class="edgtf-social-share-holder edgtf-list">
-	<span class="edgtf-social-share-title">Share</span>
-	<ul>
-		<li class="edgtf-facebook-share">
-	<a class="edgtf-share-link" href="#" onclick="window.open('http://www.facebook.com/sharer.php?s=100&amp;p[title]=A+Moment+of+Truth&amp;p[url]=http%3A%2F%2Fillustrator.edge-themes.com%2Fa-moment-of-truth%2F&amp;p[images][0]=<%=request.getContextPath()%>/userResources/images/blog-standard-img-2.jpg&amp;p[summary]=Lorem+ipsum+dolor+sit+amet%2C+consectetur+adipiscing+elit.+Integer+auctor+fringilla+lacus+vitae+egestas.+In+feugiat+laoreet+risus+id+venenatis.+Cras+sed+dui+purus.+Pellentesque+ac+leo+non+ipsum+congue+dictum+finibus+in+ante.+Aliquam+molestie+velit+vitae+nulla+fermentum+posuere.+Proin+vel+felis+id+nisl+interdum+varius.+Aliquam+nec+sem+dictum%2C+dignissim+mi+dapibus%2C+euismod+ligula.+Suspendisse+diam+sapien%2C+ultrices+et+suscipit+at%2C+fermentum+at+lorem.+Sed+mattis+scelerisque+nisi.+Ut+molestie+volutpat+ultricies.+Mauris+vitae+purus+ex.+In+hac+habitasse+platea+dictumst.+Quisque+eget+leo+iaculis%2C+mollis+dolor.+', 'sharer', 'toolbar=0,status=0,width=620,height=280');">
-					<span class="edgtf-social-network-icon social_facebook"></span>
-			</a>
-</li><li class="edgtf-twitter-share">
-	<a class="edgtf-share-link" href="#" onclick="window.open('http://twitter.com/home?status=Lorem+ipsum+dolor+sit+amet%2C+consectetur+adipiscing+elit.+Integer+auctor+fringilla+lacus+vitae+egestas.+In+feugiat+http://illustrator.edge-themes.com/a-moment-of-truth/', 'popupwindow', 'scrollbars=yes,width=800,height=400');">
-					<span class="edgtf-social-network-icon social_twitter"></span>
-			</a>
-</li><li class="edgtf-google_plus-share">
-	<a class="edgtf-share-link" href="#" onclick="popUp=window.open('https://plus.google.com/share?url=http%3A%2F%2Fillustrator.edge-themes.com%2Fa-moment-of-truth%2F', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;">
-					<span class="edgtf-social-network-icon social_googleplus"></span>
-			</a>
-</li><li class="edgtf-linkedin-share">
-	<a class="edgtf-share-link" href="#" onclick="popUp=window.open('http://linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fillustrator.edge-themes.com%2Fa-moment-of-truth%2F&amp;title=A+Moment+of+Truth', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;">
-					<span class="edgtf-social-network-icon social_linkedin"></span>
-			</a>
-</li><li class="edgtf-tumblr-share">
-	<a class="edgtf-share-link" href="#" onclick="popUp=window.open('http://www.tumblr.com/share/link?url=http%3A%2F%2Fillustrator.edge-themes.com%2Fa-moment-of-truth%2F&amp;name=A+Moment+of+Truth&amp;description=Lorem+ipsum+dolor+sit+amet%2C+consectetur+adipiscing+elit.+Integer+auctor+fringilla+lacus+vitae+egestas.+In+feugiat+laoreet+risus+id+venenatis.+Cras+sed+dui+purus.+Pellentesque+ac+leo+non+ipsum+congue+dictum+finibus+in+ante.+Aliquam+molestie+velit+vitae+nulla+fermentum+posuere.+Proin+vel+felis+id+nisl+interdum+varius.+Aliquam+nec+sem+dictum%2C+dignissim+mi+dapibus%2C+euismod+ligula.+Suspendisse+diam+sapien%2C+ultrices+et+suscipit+at%2C+fermentum+at+lorem.+Sed+mattis+scelerisque+nisi.+Ut+molestie+volutpat+ultricies.+Mauris+vitae+purus+ex.+In+hac+habitasse+platea+dictumst.+Quisque+eget+leo+iaculis%2C+mollis+dolor.+', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;">
-					<span class="edgtf-social-network-icon social_tumblr"></span>
-			</a>
-</li><li class="edgtf-pinterest-share">
-	<a class="edgtf-share-link" href="#" onclick="popUp=window.open('<%=request.getContextPath()%>/userResources/images/?url=http%3A%2F%2Fillustrator.edge-themes.com%2Fa-moment-of-truth%2F&amp;description=A Moment of Truth&amp;media=http%3A%2F%2Fillustrator.edge-themes.com%2Fwp-content%2Fuploads%2F2017%2F01%2Fblog-standard-img-2.jpg', 'popupwindow', 'scrollbars=yes,width=800,height=400');popUp.focus();return false;">
-					<span class="edgtf-social-network-icon social_pinterest"></span>
-			</a>
-</li>	</ul>
-</div>			</div>
-
-							<div class="edgtf-nav-holder"></div>
-					</div>
+		
 	</div>
 	<div class="edgtf-comment-holder clearfix" id="comments">
 		<div class="edgtf-comment-number">

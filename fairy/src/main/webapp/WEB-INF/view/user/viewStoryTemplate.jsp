@@ -204,7 +204,7 @@ ouroffice@vangard.com
 <c:forEach items="${templateList}" var="i">
 <article class="edgtf-portfolio-item mix portfolio_category_62 portfolio_category_59" >
 	<div class="edgtf-portfolio-item-inner">
-		<a class="edgtf-portfolio-link" href="viewCreateStory?rows=${i.rows}&cols=${i.columns}"></a>
+		<a class="edgtf-portfolio-link" href="viewCreateStory?rows=${i.rows}&cols=${i.columns}&templateId=${i.id}"></a>
 		<div class="edgtf-item-image-holder">
 			<div class="edgtf-item-image-holder-inner">
 		
